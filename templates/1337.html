@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <title>/1337/ - Cryptochan</title>
+</head>
+
+<style>
+    h2 {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="title">CryptoChan - /1337</h1>
+        <img src="/static/images/Ezef.gif" alt="GIF" class="banner">
+        <form id="postForm">
+            <input type="text" id="username" placeholder="Nome de Usuário" value="Anonymous" required>
+            <textarea id="content" placeholder="Escreva seu post..." required></textarea>
+            <input type="file" id="image" accept="image/*">
+            <button type="submit">Postar</button>
+        </form>
+
+        <div id="posts"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='global.js') }}"></script>
+</body>
+
+</html>

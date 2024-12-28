@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+
+    <title>Fórum CryptoChan</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CryptoChan - /Detrew</h1>
+        <form id="postForm">
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+            <textarea id="content" placeholder="Escreva seu post..." required></textarea>
+            <input type="file" id="image" accept="image/*">
+            <!-- Campo para enviar imagem -->
+            <button type="submit">Postar</button>
+        </form>
+        <div id="posts"></div>
+    </div>
+    <script src="{{ url_for('static', filename='global.js') }}"></script>
+</body>
+
+</html>

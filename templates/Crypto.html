@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoChan - Fórum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #1c1c1c;
+            border: 1px solid #444;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-size: 24px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #ff4500;
+        }
+        
+        .post {
+            border-bottom: 1px solid #444;
+            padding: 10px 0;
+        }
+        
+        .post:last-child {
+            border: none;
+        }
+        
+        .post-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ff4500;
+        }
+        
+        .post-content {
+            margin-left: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+        
+        .banner {
+            width: 468px;
+            height: 60px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        
+        a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="banner" src="{{ url_for('static', filename='images/pirate.gif') }}" alt="Fawkes">
+        <h1>CryptoChan - Fórum</h1>
+        <div class="post">
+            <div class="post-header">
+                CryptoChan.
+                <p>este é o Index do CryptoChan</p>
+                <p>O CryptoChan nasceu em 25 de dezembro 2024</p>
+                <p>O objetivo do CryptoChan é servir como ponto de encontro para Hackers discutirem tópicos de interesse.</p>
+                <p>O CryptoChan e novo, logo têm vários problemas então tenha paciência, logo postarei um repositório no GitHub com o código fonte.</p>
+                <p>Do criador: Mach1ne...</p>
+            </div>
+            <div>
+                <a href="/1337">/1337</a> <span>- Onde os 1337 se encontram</span>
+            </div>
+            <div>
+                <a href="/Detrew">/Detrew</a> <span>- Onde o Detrew sumiu</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
